@@ -2,24 +2,33 @@ package com.salesianos.tareadtos.dtos;
 
 import com.salesianos.tareadtos.model.Alumno;
 
-
 public record AlumnoDTO(
-        String name,
-        String apellidos ,
-        String email,
-        String curso,
-        String direccion
+    String name,
+    String apellidos,
+    String email,
+    String curso,
+    String direccion
 ) {
 
+    public static AlumnoDTO to(Alumno alumno) {
+        String apellidos = alumno.getApellido1() + " " + alumno.getApellido2();
 
-    public static AlumnoDTO of(Alumno a) {
+        String curso = alumno.getCurso().getNombre();
+
+        String direccion = alumno.getDireccion().getTipoVia()
+            + " "
+            + alumno.getDireccion().getLinea1()
+            + ", "
+            + alumno.getDireccion().getCp()
+            + " "
+            + alumno.getDireccion().getPoblacion();
 
         return new AlumnoDTO(
-                a.getNombre(),
-
-                a.getEmail(),
-                a.getCurso(),
-                a.getDireccion()
+            alumno.getNombre(),
+            apellidos,
+            alumno.getEmail(),
+            curso,
+            direccion
         );
     }
 

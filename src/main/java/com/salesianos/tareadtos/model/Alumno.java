@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Entity
 public class Alumno {
 
@@ -23,10 +22,8 @@ public class Alumno {
     private String email;
 
     @ManyToOne
-    @JoinColumn(name = "direccion_id")
     private Direccion direccion;
     @ManyToOne
-    @JoinColumn(name = "curso_id")
     private Curso curso;
 
 
