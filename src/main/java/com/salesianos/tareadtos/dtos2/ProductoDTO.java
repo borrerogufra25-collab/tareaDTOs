@@ -12,14 +12,14 @@ public record ProductoDTO(
     Categoria categoria
 ) {
 
-    public static ProductoDTO to(Producto producto) {
+  public static ProductoDTO to(Producto producto) {
 
-        return new ProductoDTO(
-            producto.getNombre(),
-            producto.getPvp(),
-            producto.getImagenes(),
-            producto.getCategoria()
-        );
-        
-    }
+    return new ProductoDTO(
+        producto.getNombre(),
+        producto.getPvp(),
+        producto.getImagenes(),
+        producto.getCategoria()
+    );
+
+  }
 }
