@@ -9,13 +9,17 @@ public record LibroDTO(
     Integer anioPublicacion
 ) {
 
-  public static LibroDTO of(Libro l) {
-    return new LibroDTO(
-        l.getTitulo(),
-        l.getIsbn(),
-        l.getAutor().nomAutor(),
-        l.getAnioPublicacion()
-    );
-  }
+    public static LibroDTO of(Libro l) {
 
+        if (l == null) {
+            return null;
+        }
+
+        return new LibroDTO(
+            l.getTitulo(),
+            l.getIsbn(),
+            l.getAutor().nomAutor(),
+            l.getAnioPublicacion()
+        );
+    }
 }

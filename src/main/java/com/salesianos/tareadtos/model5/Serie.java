@@ -1,27 +1,30 @@
-package com.salesianos.tareadtos.model3;
+package com.salesianos.tareadtos.model5;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
-@Entity
-@Data
-@AllArgsConstructor
+import java.util.List;
+
 @NoArgsConstructor
-public class Libro {
+@AllArgsConstructor
+@Data
+@Entity
+public class Serie {
 
     @Id
     @GeneratedValue
     private Long id;
-    private String titulo;
-    private String isbn;
-    private Integer anioPublicacion;
-    private Integer numeroPaginas;
 
-    private Autor autor;
+    private String titulo;
+    private String sinopsis;
+    private Integer numeroTemporadas;
+
+    private Creador creador;
+    private Categoria categoria;
+
+    private List<String> imagenes;
 }

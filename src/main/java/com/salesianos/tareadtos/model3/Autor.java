@@ -15,15 +15,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Autor {
 
-  @Id
-  @GeneratedValue
-  private Long id;
-  private String name;
-  private String apellido1;
-  private String apellido2;
-  private String nacionalidad;
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String name;
+    private String apellido1;
+    private String apellido2;
+    private String nacionalidad;
 
-  public String nomAutor() {
-    return name + " " + apellido1 + " " + apellido2;
-  }
+    public String nomAutor() {
+        return name + " " + apellido1 + " " + apellido2;
+    }
 }
