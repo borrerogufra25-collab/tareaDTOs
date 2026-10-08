@@ -15,13 +15,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Libro {
 
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String titulo;
-    private String isbn;
-    private Integer anioPublicacion;
-    private Integer numeroPaginas;
+  @Id
+  @GeneratedValue
+  private Long id;
+  private String titulo;
+  private String isbn;
+  private Integer anioPublicacion;
+  private Integer numeroPaginas;
 
-    private Autor autor;
+  private Autor autor;
 }

@@ -17,16 +17,16 @@ import java.util.List;
 @Entity
 public class Producto {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id
+  @GeneratedValue
+  private Long id;
 
-    private String nombre;
-    private double desc;
-    private double pvp;
-    private List<String> imagenes;
+  private String nombre;
+  private double desc;
+  private double pvp;
+  private List<String> imagenes;
 
-    @ManyToOne
-    private Categoria categoria;
+  @ManyToOne
+  private Categoria categoria;
 
 }

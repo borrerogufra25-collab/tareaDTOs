@@ -14,15 +14,15 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Direccion {
 
-    @Id
-    @GeneratedValue
-    private Long id;
-    private String tipoVia;
-    private String linea1;
-    private String linea2;
-    private int cp;
-    private String poblacion;
-    private String provincia;
+  @Id
+  @GeneratedValue
+  private Long id;
+  private String tipoVia;
+  private String linea1;
+  private String linea2;
+  private int cp;
+  private String poblacion;
+  private String provincia;
 
 
 }

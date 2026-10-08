@@ -13,10 +13,10 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Categoria {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id
+  @GeneratedValue
+  private Long id;
 
-    private String nombre;
-    private String descripcion;
+  private String nombre;
+  private String descripcion;
 }

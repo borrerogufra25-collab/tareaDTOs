@@ -13,11 +13,11 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Creador {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id
+  @GeneratedValue
+  private Long id;
 
-    private String nombre;
-    private String apellidos;
-    private String pais;
+  private String nombre;
+  private String apellidos;
+  private String pais;
 }

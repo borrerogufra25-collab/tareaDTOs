@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Cliente {
 
-    @Id
-    @GeneratedValue
-    Long id;
+  @Id
+  @GeneratedValue
+  Long id;
 
-    String nombre;
-    String apellidos;
-    String email;
-    String telefono;
+  String nombre;
+  String apellidos;
+  String email;
+  String telefono;
 }

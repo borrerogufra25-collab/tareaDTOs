@@ -15,16 +15,16 @@ import java.util.List;
 @Entity
 public class Serie {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id
+  @GeneratedValue
+  private Long id;
 
-    private String titulo;
-    private String sinopsis;
-    private Integer numeroTemporadas;
+  private String titulo;
+  private String sinopsis;
+  private Integer numeroTemporadas;
 
-    private Creador creador;
-    private Categoria categoria;
+  private Creador creador;
+  private Categoria categoria;
 
-    private List<String> imagenes;
+  private List<String> imagenes;
 }

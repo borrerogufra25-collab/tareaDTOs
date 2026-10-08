@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Reserva {
 
-    @Id
-    @GeneratedValue
-    Long id;
+  @Id
+  @GeneratedValue
+  Long id;
 
-    String codigo;
-    Integer numeroNoches;
-    Cliente cliente;
-    Habitacion habitacion;
+  String codigo;
+  Integer numeroNoches;
+  Cliente cliente;
+  Habitacion habitacion;
 }
